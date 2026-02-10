@@ -1,0 +1,97 @@
+🏥 CARETRACK – Smart Health Manager
+
+This is a simple Python project to manage patient health records using a command-line interface.
+It helps users add patients, store health records, manage medicines, and generate health reports easily.
+All data is saved in a SQLite database, so information is not lost after closing the program.
+
+Features
+
+Add new patients with name, age, and gender
+View all registered patients
+Add health records (BP, Sugar, Weight, Date)
+View patient health history
+Add medicine schedule
+View medicines for each patient
+Generate health summary report
+Delete patient records
+
+Technologies Used:
+
+Python
+SQLite Database
+SQL Queries
+File Handling
+Command Line Interface (CLI)
+
+How This Project Works
+The program connects to the caretrack.db database file.
+Required tables are created automatically if they do not exist.
+A menu is shown to the user.
+
+User selects an option:
+Add Patient
+View Patients
+Add Health Record
+View Health Records
+Add Medicine
+View Medicines
+Health Report
+Delete Patient
+Exit
+
+Based on the choice, the program performs the action.
+All data is saved automatically in the database.
+Database File Used
+caretrack.db
+This file stores all patient, record, and medicine data in SQLite format.
+Example Data Structure
+
+Patients Table:
+
+id | name   | age | gender
+1  | Rahul  | 22  | Male
+
+
+Records Table:
+
+id | patient_id | bp     | sugar | weight | date
+1  | 1          | 120/80 | 90    | 65.5   | 2026-02-10
+
+
+Medicines Table:
+
+id | patient_id | name     | time    | duration
+1  | 1          | Paracetamol | Morning | 5 days
+
+
+How to Run the Program
+Make sure Python is installed on your system.
+Open terminal or command prompt.
+Go to the project folder.
+Run the program using:
+python caretrack.py
+
+
+(Replace caretrack.py with your file name if different.)
+
+Learning Concepts Used
+
+This project uses:
+Functions
+SQLite Database
+CRUD Operations
+SQL JOIN and Aggregation
+File Handling
+Loops
+User Input
+Date and Time Handling
+
+
+Author
+Akash Kumar
+
+Purpose
+
+This project is made for learning Python database programming and real-life application development.
+It helps beginners understand how health data can be stored, managed, and analyzed using Python and SQL.
+It is useful for academic projects and interview preparation.
